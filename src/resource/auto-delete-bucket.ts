@@ -8,7 +8,7 @@ interface AutoProps extends BucketProps {
   removalPolicy?: RemovalPolicy
 }
 
-export class AutoBucket extends Construct {
+export class AutoDeleteBucket extends Construct {
   constructor(scope: Construct, id: string, props: AutoProps) {
     super(scope, id)
 
@@ -31,7 +31,7 @@ export class AutoBucket extends Construct {
 
     const custom = new CustomResource(this, 'AutoBucket', {
       lambdaProvider,
-      resourceType: 'Custom::AutoBucket',
+      resourceType: 'Custom::AutoDeleteBucket',
       properties: {
         bucketName: bucketName
       }
