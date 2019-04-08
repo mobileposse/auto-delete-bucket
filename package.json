@@ -1,0 +1,74 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "validate-docs.js",
+  "scripts": {
+    "test": "yarn jest --silent",
+    "local:create": "yarn webpack && lambda-local -l dist/src/lambda/main.js -e test/fixtures/create.json",
+    "local:delete": "yarn webpack && lambda-local -l dist/src/lambda/main.js -e test/fixtures/delete.json",
+    "compile": "yarn tsc && yarn webpack",
+    "list": "yarn compile && yarn list",
+    "synth": "yarn compile && cdk synth",
+    "deploy": "yarn compile && cdk deploy",
+    "destroy": "yarn compile && cdk destroy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-cdk/aws-cloudformation": "^0.27.0",
+    "@aws-cdk/aws-lambda": "^0.27.0",
+    "@aws-cdk/aws-s3": "^0.27.0",
+    "@aws-cdk/cdk": "^0.27.0",
+    "@types/jest": "^24.0.11",
+    "@types/uuid": "^3.4.4",
+    "aws-cdk": "^0.27.0",
+    "aws-sdk": "^2.437.0",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^11.12.2",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "jest": "^24.6.0",
+    "lambda-local": "^1.5.2",
+    "node-fixtures": "^0.0.1",
+    "typescript": "^3.4.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "jest"
+    ],
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": 0,
+      "semi": [
+        2,
+        "never"
+      ]
+    }
+  }
+}

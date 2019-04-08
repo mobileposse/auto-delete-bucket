@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single"],
+    "no-implicit-dependencies": [true, "dev"],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "no-console": false,
+    "only-arrow-functions": false,
+    "no-unused-variable": [true, { "ignore-pattern": "^_" }],
+    "variable-name": [true, "allow-leading-underscore"]
+  },
+  "rulesDirectory": []
+}

@@ -1,0 +1,3 @@
+{
+  "app": "node dist/cdk/cdk.js"
+}

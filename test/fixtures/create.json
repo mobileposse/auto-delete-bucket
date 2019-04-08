@@ -1,0 +1,13 @@
+{
+  "RequestType": "Create",
+  "ServiceToken": "arn:aws:lambda:us-east-1:123456789123:function:auto-bucket-example-SingletonLambda7677dc81117d41c-1IDQG7E6LKIPN",
+  "ResponseURL": "https://cloudformation-custom-resource-response-useast1.s3.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-east-1%3A123456789123%3Astack/auto-bucket-example/e95663d0-5631-11e9-95f5-0a3a983b5e88%7Cexampleautobucket1AutoBucket4d8de7abcfe24e3dbe52b58453a44a211663BA5E%7C57937e75-040f-402c-9ac0-b3e4557b544e?AWSAccessKeyId=AKIA6L7Q4OWTWXVILX6J&Expires=1554318051&Signature=%2FaLoSR1csDLLs9B5Bi4fqVoo5k4%3D",
+  "StackId": "arn:aws:cloudformation:us-east-1:123456789123:stack/auto-bucket-example/e95663d0-5631-11e9-95f5-0a3a983b5e88",
+  "RequestId": "57937e75-040f-402c-9ac0-b3e4557b544e",
+  "LogicalResourceId": "exampleautobucket1AutoBucket4d8de7abcfe24e3dbe52b58453a44a211663BA5E",
+  "ResourceType": "Custom::AutoBucket",
+  "ResourceProperties": {
+    "ServiceToken": "arn:aws:lambda:us-east-1:123456789123:function:auto-bucket-example-SingletonLambda7677dc81117d41c-1IDQG7E6LKIPN",
+    "BucketName": "autoexample-bucket1"
+  }
+}

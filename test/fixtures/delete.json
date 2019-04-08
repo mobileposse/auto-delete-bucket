@@ -1,0 +1,14 @@
+{
+  "RequestType": "Delete",
+  "ServiceToken": "arn:aws:lambda:us-east-1:123456789123:function:auto-bucket-example-SingletonLambda7677dc81117d41c-A6ASUZTVJQHO",
+  "ResponseURL": "https://cloudformation-custom-resource-response-useast1.s3.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-east-1%3A123456789123%3Astack/auto-bucket-example/f8e884a0-5649-11e9-a7e2-0a5c603a1bba%7Cexampleautobucket1AutoBucket5bedd9c74d25462bade8a6ece8fdae48141A0CE3%7C0002c9a6-4422-4bb8-ad85-24db30b7166f?AWSAccessKeyId=AKIA6L7Q4OWTWXVILX6J&Expires=1554332048&Signature=m9BcPRf0Q3%2F1NxcQu4pYuNu%2BaDc%3D",
+  "StackId": "arn:aws:cloudformation:us-east-1:123456789123:stack/auto-bucket-example/f8e884a0-5649-11e9-a7e2-0a5c603a1bba",
+  "RequestId": "0002c9a6-4422-4bb8-ad85-24db30b7166f",
+  "LogicalResourceId": "exampleautobucket1AutoBucket4d8de7abcfe24e3dbe52b58453a44a211663BA5E",
+  "PhysicalResourceId": "auto-bucket-example-exampleautobucket1AutoBucket5bedd9c74d25462bade8a6ece8fdae48141A0CE3-94YBZF0R1A2W",
+  "ResourceType": "Custom::AutoBucket",
+  "ResourceProperties": {
+    "ServiceToken": "arn:aws:lambda:us-east-1:123456789123:function:auto-bucket-example-SingletonLambda7677dc81117d41c-A6ASUZTVJQHO",
+    "BucketName": "autoexample-bucket1"
+  }
+}

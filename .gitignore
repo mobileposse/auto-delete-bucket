@@ -1,0 +1,17 @@
+**.png
+
+cdk/node_modules
+cdk/**/*.js
+cdk/**/*.d.ts
+
+src/resource/*.js
+src/resource/*.d.ts
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules
+
+**/.DS_Store
+_site
+dist
