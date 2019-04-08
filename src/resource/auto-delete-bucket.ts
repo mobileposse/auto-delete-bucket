@@ -2,6 +2,7 @@ import { Code, Runtime, SingletonFunction } from '@aws-cdk/aws-lambda'
 import { Construct, RemovalPolicy } from '@aws-cdk/cdk'
 import { CustomResource } from '@aws-cdk/aws-cloudformation'
 import { Bucket, BucketProps } from '@aws-cdk/aws-s3'
+import path = require('path')
 
 interface AutoProps extends BucketProps {
   bucketName: string
@@ -20,7 +21,7 @@ export class AutoDeleteBucket extends Construct {
     const lambdaProvider = new SingletonFunction(this, 'AutoBucketHandler', {
       uuid: '7677dc81-117d-41c0-b75b-db11cb84bb70',
       runtime: Runtime.NodeJS810,
-      code: Code.asset('./dist/src/lambda'),
+      code: Code.asset(path.join(__dirname, '../lambda')),
       handler: 'main.handler'
     })
 
