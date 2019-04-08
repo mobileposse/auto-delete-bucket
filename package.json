@@ -8,10 +8,12 @@
     "local:create": "yarn webpack && lambda-local -l dist/src/lambda/main.js -e test/fixtures/create.json",
     "local:delete": "yarn webpack && lambda-local -l dist/src/lambda/main.js -e test/fixtures/delete.json",
     "compile": "yarn tsc && yarn webpack",
-    "list": "yarn compile && yarn list",
-    "synth": "yarn compile && cdk synth",
-    "deploy": "yarn compile && cdk deploy",
-    "destroy": "yarn compile && cdk destroy"
+    "cdk": "yarn copile && cdk",
+    "cdk:list": "yarn compile && cdk list",
+    "cdk:synth": "yarn compile && cdk synth",
+    "cdk:deploy": "yarn compile && cdk deploy",
+    "cdk:destroy": "yarn compile && cdk destroy",
+    "cdk:version": "yarn compile && cdk --version"
   },
   "author": "",
   "license": "ISC",
