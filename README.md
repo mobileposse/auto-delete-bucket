@@ -54,3 +54,7 @@ We find that in most of our use cases, we want to automatically delete the bucke
 ## How it Works
 
 Create a [custom resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that will automatically delete your bucket contents before attempting bucket deletion. 
+
+## More Information
+
+See the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/delete-or-empty-bucket.html) for more information on S3 and deleting bucket contents. 
