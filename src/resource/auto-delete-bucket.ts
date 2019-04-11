@@ -9,7 +9,7 @@ export class AutoDeleteBucket extends Bucket {
     super(scope, id, {
       ...props,
       removalPolicy: RemovalPolicy.Destroy
-    });
+    })
 
     const lambdaProvider = new SingletonFunction(this, 'AutoBucketHandler', {
       uuid: '7677dc81-117d-41c0-b75b-db11cb84bb70',
