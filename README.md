@@ -39,9 +39,8 @@ The bucket can be configured with any of the [standard CDK Bucket Properties](ht
 
 ## Requirements
 
-* This is designed to work with AWS CDK but feel free to borrow the code if you want to create the custom CF resource some other way.
-* Does not yet work with versioned buckets but it can be easily adapted to do so (pull requests welcome.)
-
+- This is designed to work with AWS CDK but feel free to borrow the code if you want to create the custom CF resource some other way.
+- Does not yet work with versioned buckets but it can be easily adapted to do so (pull requests welcome.)
 
 ## Motivation
 
@@ -53,8 +52,34 @@ We find that in most of our use cases, we want to automatically delete the bucke
 
 ## How it Works
 
-Create a [custom resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that will automatically delete your bucket contents before attempting bucket deletion. 
+Create a [custom resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) that will automatically delete your bucket contents before attempting bucket deletion.
+
+## Running Tests
+
+```
+yarn test
+```
+
+## Publish to NPM (Official maintainers only)
+
+Add npm user to your local machine (one time setup)
+
+```
+npm adduser
+```
+
+Make sure the working directly is clean (all local changes are committed or stashed.) Bump the version (`major`, `minor` or `patch`) as follows:
+
+```
+npm bump:minor
+```
+
+Push the release
+
+```
+npm publish
+```
 
 ## More Information
 
-See the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/delete-or-empty-bucket.html) for more information on S3 and deleting bucket contents. 
+See the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/delete-or-empty-bucket.html) for more information on S3 and deleting bucket contents.

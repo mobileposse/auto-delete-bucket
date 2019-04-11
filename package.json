@@ -1,15 +1,27 @@
 {
   "name": "auto-delete-bucket",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "CDK Construct for automatically deleting bucket contents which allows the bucket to be deleted when the stack is destroyed.",
   "main": "dist/src/resource/auto-delete-bucket.js",
   "types": "dist/src/resource/auto-delete-bucket.d.ts",
-  "keywords": ["aws", "s3", "cloudformation", "bucket", "delete", "destroy", "cdk", "construct"],
+  "keywords": [
+    "aws",
+    "s3",
+    "cloudformation",
+    "bucket",
+    "delete",
+    "destroy",
+    "cdk",
+    "construct"
+  ],
   "homepage": "https://github.com/mobileposse/auto-delete-bucket",
   "scripts": {
     "test": "yarn jest --silent",
     "local:create": "yarn webpack && lambda-local -l dist/src/lambda/main.js -e test/fixtures/create.json",
     "local:delete": "yarn webpack && lambda-local -l dist/src/lambda/main.js -e test/fixtures/delete.json",
+    "bump:patch": "npm version patch -m 'Bump version'",
+    "bump:minor": "npm version minor -m 'Bump version'",
+    "bump:major": "npm version major -m 'Bump version'",
     "compile": "yarn tsc && yarn webpack",
     "cdk": "yarn compile && cdk",
     "cdk:list": "yarn compile && cdk list",
@@ -21,8 +33,8 @@
   "author": "Sean Schofield",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/mobileposse/auto-delete-bucket"
+    "type": "git",
+    "url": "https://github.com/mobileposse/auto-delete-bucket"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudformation": "^0.27.0",
