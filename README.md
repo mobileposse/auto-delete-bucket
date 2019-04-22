@@ -80,6 +80,12 @@ Push the release
 npm publish
 ```
 
+Push the tagged source back up to Github
+
+```
+git push --tags
+```
+
 ## More Information
 
 See the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/dev/delete-or-empty-bucket.html) for more information on S3 and deleting bucket contents.
