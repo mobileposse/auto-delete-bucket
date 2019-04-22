@@ -14,7 +14,6 @@ export const emptyBucket = async bucketName => {
 
   // make a list of objects to delete
   for (let record of contents) {
-    console.log('deleting: ' + record.Key)
     records.push({ Key: record.Key })
   }
 
