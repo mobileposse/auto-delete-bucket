@@ -16,7 +16,8 @@ export class AutoDeleteBucket extends Bucket {
       runtime: Runtime.NodeJS810,
       code: Code.asset(path.join(__dirname, '../lambda')),
       handler: 'main.handler',
-      lambdaPurpose: 'AutoBucket'
+      lambdaPurpose: 'AutoBucket',
+      timeout: 900
     })
 
     // allow the bucket contents to be read and deleted by the lambda
