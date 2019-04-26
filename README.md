@@ -71,7 +71,7 @@ npm adduser
 Make sure the working directly is clean (all local changes are committed or stashed.) Bump the version (`major`, `minor` or `patch`) as follows:
 
 ```
-npm bump:minor
+npm run bump:minor
 ```
 
 Push the release
