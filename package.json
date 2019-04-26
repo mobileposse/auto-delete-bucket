@@ -1,6 +1,6 @@
 {
   "name": "auto-delete-bucket",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "CDK Construct for automatically deleting bucket contents which allows the bucket to be deleted when the stack is destroyed.",
   "main": "dist/src/resource/auto-delete-bucket.js",
   "types": "dist/src/resource/auto-delete-bucket.d.ts",
