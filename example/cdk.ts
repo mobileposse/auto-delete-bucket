@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-import { App } from '@aws-cdk/cdk'
+import { App, Tag } from '@aws-cdk/cdk'
 import { ExampleStack } from './stacks/example-stack'
 
 const cdk = new App()
-new ExampleStack(cdk, 'auto-bucket-example', {})
+const example = new ExampleStack(cdk, 'auto-bucket-example', {})
+example.node.apply(new Tag('example', 'true'))
 
 cdk.run()
