@@ -68,13 +68,7 @@ Add npm user to your local machine (one time setup)
 npm adduser
 ```
 
-Make sure the working directly is clean (all local changes are committed or stashed.) Bump the version (`major`, `minor` or `patch`) as follows:
-
-```
-npm run bump:minor
-```
-
-Push the release
+Push the release (you will be asked the new version)
 
 ```
 npm publish
