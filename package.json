@@ -43,20 +43,20 @@
     "@types/uuid": "^3.4.4"
   },
   "peerDependencies": {
-    "@aws-cdk/aws-cloudformation": "^0.29.0",
-    "@aws-cdk/aws-lambda": "^0.29.0",
-    "@aws-cdk/aws-s3": "^0.29.0",
-    "@aws-cdk/cdk": "^0.29.0",
-    "aws-cdk": "^0.29.0"
+    "@aws-cdk/aws-cloudformation": "^0.31.0",
+    "@aws-cdk/aws-lambda": "^0.31.0",
+    "@aws-cdk/aws-s3": "^0.31.0",
+    "@aws-cdk/cdk": "^0.31.0",
+    "aws-cdk": "^0.31.0"
   },
   "devDependencies": {
-    "@aws-cdk/aws-cloudformation": "^0.29.0",
-    "@aws-cdk/aws-lambda": "^0.29.0",
-    "@aws-cdk/aws-s3": "^0.29.0",
-    "@aws-cdk/cdk": "^0.29.0",
+    "@aws-cdk/aws-cloudformation": "^0.31.0",
+    "@aws-cdk/aws-lambda": "^0.31.0",
+    "@aws-cdk/aws-s3": "^0.31.0",
+    "@aws-cdk/cdk": "^0.31.0",
     "@types/aws-sdk": "^2.7.0",
     "@types/node": "^11.12.2",
-    "aws-cdk": "^0.29.0",
+    "aws-cdk": "^0.31.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-async-generator-functions": "^6.24.1",
