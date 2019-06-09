@@ -60,6 +60,22 @@ Create a [custom resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/
 yarn test
 ```
 
+## Building the Example Stack
+
+The source code includes a reference CDK project inside the `example` directory which consists of a single `auto-delete-bucket`.
+
+You can build the stack with:
+
+```
+yarn cdk:deploy
+```
+
+Go ahead and test this bucket out by adding some files to it. You can then test that everything will delete properly by destroying the stack (and bucket) with:
+
+```
+yarn cdk:destroy
+```
+
 ## Publish to NPM (Official maintainers only)
 
 Add npm user to your local machine (one time setup)
