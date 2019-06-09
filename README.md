@@ -87,7 +87,13 @@ npm adduser
 Push the release (you will be asked the new version)
 
 ```
-npm publish
+npm login
+```
+
+Then provide username and password. Once authenticaated use the following command:
+
+```
+yarn publish
 ```
 
 Push the tagged source back up to Github
