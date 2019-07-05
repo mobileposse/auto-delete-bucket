@@ -1,4 +1,4 @@
-import { App, Stack, StackProps } from '@aws-cdk/cdk'
+import { App, Stack, StackProps } from '@aws-cdk/core'
 import { AutoDeleteBucket } from '../../src/resource/auto-delete-bucket'
 
 export class ExampleStack extends Stack {
