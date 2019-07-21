@@ -1,5 +1,5 @@
 {
-  "name": "auto-delete-bucket",
+  "name": "@mobileposse/auto-delete-bucket",
   "version": "1.1.0",
   "description": "CDK Construct for automatically deleting bucket contents which allows the bucket to be deleted when the stack is destroyed.",
   "main": "dist/src/resource/auto-delete-bucket.js",
