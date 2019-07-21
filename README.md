@@ -97,7 +97,7 @@ npm login
 Then provide username and password. Once authenticaated use the following command:
 
 ```
-yarn publish
+npm publish --access public
 ```
 
 Push the tagged source back up to Github
