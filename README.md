@@ -42,6 +42,10 @@ The bucket can be configured with any of the [standard CDK Bucket Properties](ht
 - This is designed to work with AWS CDK but feel free to borrow the code if you want to create the custom CF resource some other way.
 - Does not yet work with versioned buckets but it can be easily adapted to do so (pull requests welcome.)
 
+## Versioning
+
+Version numbers are consistent with the major and minor version numbers of the corresponding AWS CDK version that this module is compatible with. In other words, version 1.1.X would be compatiable with aws-cdk 1.1.X. Patch versions will inevitably vary between the two project but as long as you are using a version consistent with the major and minor version of the CDK version you are using you should be good.
+
 ## Motivation
 
 Cloud Formation will often fail to actually delete your S3 Bucket resources when you destroy your stack. This happens whenever the bucket is not empty as the Cloud Formation documentation clearly states:
