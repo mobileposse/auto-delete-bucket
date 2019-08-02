@@ -19,3 +19,5 @@ dist
 **.tgz
 
 cdk.out
+
+package

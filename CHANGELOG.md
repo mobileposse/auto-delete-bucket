@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0
+
+- Upgrade to support CDK 1.3.0
+- Exclude CDK cruft from packaged asset
+
 ## 1.2.0
 
 - Upgrade to support CDK 1.2.0
