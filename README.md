@@ -9,7 +9,13 @@ This is an [AWS CDK Construct](https://docs.aws.amazon.com/CDK/latest/userguide/
 Just install with npm:
 
 ```
-npm add auto-delete-bucket
+npm add @mobileposse/auto-delete-bucket
+```
+
+or yarn:
+
+```
+yarn add @mobileposse/auto-delete-bucket
 ```
 
 And then require the construct and use it in your stack like any standard CDK resource!
