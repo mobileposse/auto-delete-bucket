@@ -9,7 +9,9 @@ export const emptyBucket = async bucketName => {
     .promise()
 
   // nothing left - we're done!
-  const contents = listedObjects.Versions || []
+  const contents = (listedObjects.Versions || []).concat(
+    listedObjects.DeleteMarkers || []
+  )
   if (contents.length === 0) return
 
   let records = []
