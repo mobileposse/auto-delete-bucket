@@ -4,9 +4,13 @@
 
 - Upgrade to support CDK 1.23.0
 
-## 1.9.0
+## 1.18.0
 
 - Support deleting contents from Versioned buckets.
+- Upgrade to support CDK 1.18.0
+
+## 1.9.0
+
 - Upgrade to support CDK 1.9.0
 
 ## 1.6.1
