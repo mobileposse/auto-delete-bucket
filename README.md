@@ -21,7 +21,7 @@ yarn add @mobileposse/auto-delete-bucket
 And then require the construct and use it in your stack like any standard CDK resource!
 
 ```js
-import { AutoDeleteBucket } from 'auto-delete-bucket'
+import { AutoDeleteBucket } from '@mobileposse/auto-delete-bucket'
 
 export class ExampleStack extends Stack {
   constructor(scope: App, id: string, props?: StackProps) {
