@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.27.0
+
+- Upgrade to support CDK 1.27.0
+
 ## 1.23.0
 
 - Upgrade to support CDK 1.23.0
