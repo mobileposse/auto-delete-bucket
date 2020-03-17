@@ -8,6 +8,7 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
+    "skipLibCheck": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
