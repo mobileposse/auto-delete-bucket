@@ -28,7 +28,8 @@
     "cdk:synth": "yarn compile && cdk synth",
     "cdk:deploy": "yarn compile && cdk deploy",
     "cdk:destroy": "yarn compile && cdk destroy",
-    "cdk:version": "yarn compile && cdk --version"
+    "cdk:version": "yarn compile && cdk --version",
+    "prepublishOnly": "yarn compile"
   },
   "author": "Sean Schofield",
   "license": "MIT",
