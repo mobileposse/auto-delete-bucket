@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.38.0
+
+- Upgrade to support CDK 1.38.0
+
 ## 1.28.0
 
 - Upgrade to support CDK 1.28.0
