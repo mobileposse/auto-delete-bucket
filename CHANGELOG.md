@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.46.0
+
+- Upgrade to support CDK 1.46.0
+
 ## 1.44.0
 
 - Upgrade to support CDK 1.44.0
