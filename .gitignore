@@ -21,3 +21,4 @@ dist
 cdk.out
 
 package
+/.idea/*
