@@ -41,7 +41,7 @@
     "@types/jest": "^24.0.11",
     "@types/uuid": "^3.4.4",
     "aws-sdk": "^2.437.0",
-    "axios": "^0.18.1"
+    "axios": "^0.21.1"
   },
   "peerDependencies": {
     "@aws-cdk/aws-cloudformation": "1.55.0",
