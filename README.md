@@ -2,6 +2,8 @@
 
 Creates an S3 bucket in Cloud Formation that will automatically be emptied **before** the bucket is destroyed by Cloud Formation.
 
+> :warning: **Deprecation notice**: AWS has included support for auto-deleting bucket contents upon bucket destroying in the [AWS-CDK](https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-s3.BucketProps.html) using the "autoDeleteObjects: true" BucketProps field.  This is now the recommended way to handle this functionality.
+
 ## How to use it
 
 This is an [AWS CDK Construct](https://docs.aws.amazon.com/CDK/latest/userguide/constructs.html) which makes it dead simple to use in your CDK code.
