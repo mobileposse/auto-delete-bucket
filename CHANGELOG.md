@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.56.0
+
+- Update to NodeJS 12 for Lambda runtime
+- Deprecation notice
+
 ## 1.55.0
 
 - Upgrade to support CDK 1.55.0
